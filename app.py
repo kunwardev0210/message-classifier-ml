@@ -44,16 +44,7 @@ def train_model_v2(data):
 
 model, model_accuracy = train_model_v2(df)
 
-# --- 3. SIDEBAR METRICS ---
-st.sidebar.header("📊 Model Metrics & Metadata")
-st.sidebar.metric(label="Dataset Size", value=f"{len(df)} Rows")
-st.sidebar.metric(label="Testing Accuracy", value=f"{model_accuracy * 100:.2f}%")
-st.sidebar.markdown("""
-**Technical Stack:**
-* **Algorithm:** Multinomial Naive Bayes
-* **Vectorization:** TF-IDF with Word Bi-grams
-* **Tuning:** Parametric Smoothing (alpha=0.1)
-""")
+
 
 # --- 4. INTERACTIVE INTERFACE ---
 st.subheader("Test the Production Model Live:")

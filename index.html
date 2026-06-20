@@ -55,9 +55,7 @@ def train_production_model(data):
 
 model, model_accuracy = train_production_model(df)
 
-st.sidebar.header("📊 Model Metrics")
-st.sidebar.metric(label="Dataset Size", value=f"{len(df)} Rows")
-st.sidebar.metric(label="Testing Accuracy", value=f"{model_accuracy * 100:.2f}%")
+
 
 st.subheader("Test the Production Model Live:")
 user_input = st.text_area("Paste any suspicious email or SMS message below:")

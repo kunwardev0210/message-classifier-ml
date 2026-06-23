@@ -20,7 +20,7 @@ In real-world cybersecurity ecosystems, relying solely on standalone machine lea
 
 This project implements a multi-tiered security pipeline:
 1. **The Heuristic Pre-Filter:** Intercepts incoming strings to check for high-risk financial fraud strings and unverified high-value reward claims (e.g., regional phrases like "1cr", "lakh", or "$").
-2. **The ML Core Pipeline (Fallback):** If no hard rules are triggered, a固定 Multinomial Naive Bayes model processes the text through a TF-IDF Vectorizer tuned with Laplace smoothing ($\alpha=0.1$) to deliver high-precision probability scores.
+2. **The ML Core Pipeline (Fallback):** If no hard rules are triggered, a Multinomial Naive Bayes model processes the text through a TF-IDF Vectorizer tuned with Laplace smoothing ($\alpha=0.1$) to deliver high-precision probability scores.
 
 ### Technologies Used:
 * **Frontend/UI:** Streamlit / `stlite` (WebAssembly implementation)
